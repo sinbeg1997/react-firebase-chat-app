@@ -16,6 +16,8 @@ export const Messages = () => {
       unsub();
     };
   }, []);
+
+  console.log("@@messages", messages);
   return (
     <div className="messages">
       {messages.map((message) => {
